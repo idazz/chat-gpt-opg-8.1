@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produkt - Ginhjemmeside</title>
+    <title>Blogindlæg - Min Blog</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,56 +37,44 @@
         }
         main {
             display: flex;
-            padding: 2rem;
             flex: 1;
+            padding: 2rem;
+        }
+        .left-column, .right-column {
+            flex: 1;
+            padding: 1rem;
         }
         .left-column {
-            flex: 1;
-            margin-right: 2rem;
             text-align: center;
         }
         .left-column img {
             width: 100%;
-            max-width: 300px; /* Keep the maximum width */
+            max-width: 300px;
             height: auto;
+            margin-bottom: 1rem;
         }
-        .suggested-products {
-            display: flex;
-            justify-content: space-around;
+        .related-posts {
             margin-top: 1rem;
         }
-        .suggested-products div {
-            text-align: center;
+        .related-posts h2 {
+            color: blue;
         }
-        .suggested-products img {
-            width: 100px;
-            height: 100px;
+        .related-posts .post {
+            margin-top: 1rem;
         }
         .right-column {
-            flex: 2;
+            border-left: 1px solid #ccc;
+            padding-left: 2rem;
         }
         .right-column h1 {
             color: #007BFF;
         }
-        .right-column button {
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            padding: 1rem;
-            cursor: pointer;
-            font-size: 1rem;
-            margin-top: 1rem;
-        }
-        .right-column button:hover {
-            background-color: #0056b3;
+        .right-column .byline {
+            font-style: italic;
+            color: #666;
         }
         .right-column p {
             margin-top: 1rem;
-        }
-
-        .left-column h2 {
-            color: blue; 
-            margin-top: 1rem; 
         }
     </style>
 </head>
@@ -95,48 +83,37 @@
         <img src="https://st3.depositphotos.com/5934840/32908/v/1600/depositphotos_329083356-stock-illustration-wine-bottle-icon-flat-design.jpg" alt="Logo" width="70px" height="70px">
         <nav>
             <ul style="list-style-type: none; padding: 0;">
+                <li style="display: inline; margin-right: 1rem;"><a href="index.html" style="color: white; text-decoration: none;">Forside</a></li>
                 <li style="display: inline; margin-right: 1rem;"><a href="om_os.html" style="color: white; text-decoration: none;">Om os</a></li>
-                <li style="display: inline; margin-right: 1rem;"><a href="login.html" style="color: white; text-decoration: none;">Login</a></li>
-            </ul>
-            <ul style="list-style-type: none; padding: 0; margin-top: 1rem;">
-                <li style="display: block; margin-right: 1rem;"><a href="produkt_kategori.html" style="color: white; text-decoration: none;">Produkt Kategori Menu</a></li>
+                <li style="display: inline; margin-right: 1rem;"><a href="kontakt.html" style="color: white; text-decoration: none;">Kontakt</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="left-column">
-            <img src="https://www.poetzsch-padborg.dk/837-large_default/Bombay-Sapphire-London-Dry-Gin-1-l.jpg" alt="Produktbillede" width="300px" height="300px">
-            <h2>Forslående produkter</h2> 
-            <div class="suggested-products">
-                <div>
-                    <img src="https://www.raschvin.com/wp-content/uploads/2022/12/beefeater-pink-strawberry-gin-bottle.jpg" alt="Forslået Produkt 1">
-                    <p>Beefeater<br>
-                    - Pink Strawberry</p>
+        <div style="flex: 1;">
+            <h1 style="color: #007BFF; text-align: center; margin-bottom: 2rem;">Blogindlæg Titel</h1>
+            <div style="display: flex;">
+                <div class="left-column">
+                    <img src="https://via.placeholder.com/300" alt="Blogindlæg billede">
+                    <div class="related-posts">
+                        <h2>Læs også</h2>
+                        <div class="post">
+                            <h3>Titel på Blogindlæg 1</h3>
+                            <p>Kort beskrivelse af blogindlæg 1.</p>
+                        </div>
+                        <div class="post">
+                            <h3>Titel på Blogindlæg 2</h3>
+                            <p>Kort beskrivelse af blogindlæg 2.</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="https://www.nemlig.com/scommerce/images/beefeater-gin-40.jpg?i=S2jT83IF/5023833&w=623&h=623&mode=pad" alt="Forslået Produkt 2">
-                    <p>Beefeater Gin</p>
-                </div>
-                <div>
-                    <img src="https://vinhuset.dk/cdn/shop/products/ukiyo-blossom-gin-01.png?v=1703166839" alt="Forslået Produkt 3">
-                    <p>Ukiyo<br>
-                    - Blossom Gin</p>
+                <div class="right-column">
+                    <p class="byline">Skrevet af Navn, Dato</p>
+                    <p>Her er blogindlæggets manchet, hvor der kan være en kort introduktion til emnet eller indholdet.</p>
+                    <p>Her følger så blogindlæggets brødtekst. Du kan indsætte så meget tekst, som du ønsker, og formatere det efter behov.</p>
+                    <p>Dette er bare et eksempel på strukturen. Du kan tilføje flere afsnit, billeder, eller ændre stylingen efter dine præferencer.</p>
                 </div>
             </div>
-        </div>
-        <div class="right-column">
-            <h1>London Dry Gin</h1>
-            <p>Beskrivelse: Bombay Sapphire er en gin af den ekstra klasse i den typiske blå flaske. Baseret på en opskrift fra år 1764. Dens omfattende destillationsproces og den unikke sammensætning af udvalgte ingredienser gør Bombay Sapphire til noget særligt. Begge faktorer fjerner dominansen af ​​den typiske enebærsmag, blødgør den ellers intense aroma og gør Bombay Sapphire til en klasse for sig. Den særligt skånsomme og omhyggelige udvinding af de værdifulde ingredienser gennem damp er en af ​​hemmelighederne for smagen af ​​Bombay Sapphire. Generelt får gin sin smag fra fire til seks botaniske ingredienser. I modsætning hertil danner Bombay Sapphires ti dyrebare botaniske ingredienser grundlaget for dens karakteristiske smag.<br><br>
-                Botaniske ingredienser: Enebær, citronskal, korianderfrø, angelica rod, orris rod, paradiskorn, cubeb peber, cassia bark, mandler, lakrids<br>
-                Farve: Klar.<br>
-                Næse: Mild, enebær.<br>
-                Smag: Blød, afbalanceret, mangesidet, enebær, angelica, lakrids, korn af paradis.<br>
-                Finish: Langtidsholdbar.</p>
-            <button>Læg i kurv</button>
-            <p>Vores leveringstid er normalt 2-3 hverdage.<br>
-               Bestil inden kl. 14 for afsendelse samme dag.<br>
-               Vi tilbyder gratis fragt på ordrer over 500 kr.<br>
-               Hvis du har spørgsmål, er du velkommen til at kontakte vores kundeservice.</p>
         </div>
     </main>
 </body>
