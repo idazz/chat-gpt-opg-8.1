@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkt - Ginhjemmeside</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        header img {
+            vertical-align: middle;
+        }
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            padding: 2rem;
+            flex: 1;
+        }
+        .left-column {
+            flex: 1;
+            margin-right: 2rem;
+            text-align: center;
+        }
+        .left-column img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+        .suggested-products {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 1rem;
+        }
+        .suggested-products img {
+            width: 100px;
+            height: 100px;
+        }
+        .right-column {
+            flex: 2;
+        }
+        .right-column h1 {
+            color: #007BFF;
+        }
+        .right-column button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+        .right-column button:hover {
+            background-color: #0056b3;
+        }
+        .right-column p {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://st3.depositphotos.com/5934840/32908/v/1600/depositphotos_329083356-stock-illustration-wine-bottle-icon-flat-design.jpg" alt="Logo" width="70px" height="70px">
+        <nav>
+            <ul>
+                <li><a href="om_os.html">Om os</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <ul>
+                <li><a href="produkt_kategori.html">Produkt Kategori Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="left-column">
+            <img src="https://www.poetzsch-padborg.dk/837-large_default/Bombay-Sapphire-London-Dry-Gin-1-l.jpg" alt="Produktbillede">
+            <div class="suggested-products">
+                <div>
+                    <img src="https://www.raschvin.com/wp-content/uploads/2022/12/beefeater-pink-strawberry-gin-bottle.jpg" alt="Forslået Produkt 1">
+                    <p>Forslået Produkt 1</p>
+                </div>
+                <div>
+                    <img src="https://www.nemlig.com/scommerce/images/beefeater-gin-40.jpg?i=S2jT83IF/5023833&w=623&h=623&mode=pad" alt="Forslået Produkt 2">
+                    <p>Forslået Produkt 2</p>
+                </div>
+                <div>
+                    <img src="https://vinhuset.dk/cdn/shop/products/ukiyo-blossom-gin-01.png?v=1703166839" alt="Forslået Produkt 3">
+                    <p>Forslået Produkt 3</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <h1>Produkt Titel</h1>
+            <p>Dette er en detaljeret beskrivelse af produktet. Her kan du skrive om produktets egenskaber, historie, og hvorfor det er specielt. Det kan være, hvordan det er fremstillet, hvilke botanicals der er brugt, og hvordan det bedst kan nydes.</p>
+            <button>Læg i kurv</button>
+            <p>Vores leveringstid er normalt 2-3 hverdage. Bestil inden kl. 14 for afsendelse samme dag. Vi tilbyder gratis fragt på ordrer over 500 kr. Hvis du har spørgsmål, er du velkommen til at kontakte vores kundeservice.</p>
+        </div>
+    </main>
+</body>
+</html>
+
