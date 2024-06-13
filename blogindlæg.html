@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogindlæg - Min Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        header img {
+            vertical-align: middle;
+        }
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            padding: 2rem;
+            flex: 1;
+        }
+        .left-column, .right-column {
+            flex: 1;
+            padding: 1rem;
+        }
+        .left-column {
+            text-align: center;
+        }
+        .left-column img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        .related-posts {
+            margin-top: 1rem;
+        }
+        .related-posts h2 {
+            color: blue;
+        }
+        .related-posts .post {
+            margin-top: 1rem;
+        }
+        .right-column {
+            border-left: 1px solid #ccc;
+            padding-left: 2rem;
+        }
+        .right-column h1 {
+            color: #007BFF;
+        }
+        .right-column .byline {
+            font-style: italic;
+            color: #666;
+        }
+        .right-column p {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://st3.depositphotos.com/5934840/32908/v/1600/depositphotos_329083356-stock-illustration-wine-bottle-icon-flat-design.jpg" alt="Logo" width="70px" height="70px">
+        <nav>
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="display: inline; margin-right: 1rem;"><a href="index.html" style="color: white; text-decoration: none;">Forside</a></li>
+                <li style="display: inline; margin-right: 1rem;"><a href="om_os.html" style="color: white; text-decoration: none;">Om os</a></li>
+                <li style="display: inline; margin-right: 1rem;"><a href="kontakt.html" style="color: white; text-decoration: none;">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="left-column">
+            <img src="https://via.placeholder.com/300" alt="Blogindlæg billede">
+            <div class="related-posts">
+                <h2>Læs også</h2>
+                <div class="post">
+                    <h3>Titel på Blogindlæg 1</h3>
+                    <p>Kort beskrivelse af blogindlæg 1.</p>
+                </div>
+                <div class="post">
+                    <h3>Titel på Blogindlæg 2</h3>
+                    <p>Kort beskrivelse af blogindlæg 2.</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <h1>Blogindlæg Titel</h1>
+            <p class="byline">Skrevet af Navn, Dato</p>
+            <p>Her er blogindlæggets manchet, hvor der kan være en kort introduktion til emnet eller indholdet.</p>
+            <p>Her følger så blogindlæggets brødtekst. Du kan indsætte så meget tekst, som du ønsker, og formatere det efter behov.</p>
+            <p>Dette er bare et eksempel på strukturen. Du kan tilføje flere afsnit, billeder, eller ændre stylingen efter dine præferencer.</p>
+        </div>
+    </main>
+</body>
+</html>
