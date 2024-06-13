@@ -18,26 +18,19 @@
             </ul>
         </nav>
     </header>
-    <main style="padding: 2rem; display: flex;">
-        <div style="flex: 1; margin-right: 2rem;">
-            <img src="https://st3.depositphotos.com/5934840/32908/v/1600/depositphotos_329083356-stock-illustration-wine-bottle-icon-flat-design.jpg" alt="Gin" width="250px" height="250px" style="display: block; margin-bottom: 1rem;">
-            <h2 style="color: #0056b3;">Kontakt Information</h2>
-            <address style="font-style: normal; line-height: 1.6;">
-                <strong>Adresse:</strong> Ginvej 2, 8000 Aarhus, Denmark<br>
-                <strong>Telefon:</strong> +45 00 11 22 33 (Åben 10-19)<br>
-                <strong>E-mail:</strong> <a href="mailto:din@ginforhandler.dk">din@ginforhandler.dk</a>
-            </address>
-        </div>
-        <div style="flex: 2;">
-            <h1 style="color: #007BFF;">Login</h1>
-            <form onsubmit="return validateForm()" method="post">
+    <main style="padding: 2rem; display: flex; justify-content: center; align-items: center; height: 80vh;">
+        <div style="background-color: #f8f9fa; padding: 2rem; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <h1 style="color: #007BFF; text-align: center;">Kunde Log ind</h1>
+            <form name="login" onsubmit="return validateForm()" method="post" style="display: flex; flex-direction: column; gap: 1rem;">
                 <label for="username" style="display: block; margin-bottom: 0.5rem;">Brugernavn:</label>
-                <input type="text" id="username" name="username" style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;">
+                <input type="text" id="username" name="username" style="padding: 0.5rem;">
                 
-                <label for="password" style="display: block; margin-bottom: 0.5rem;">Adgangskode:</label>
-                <input type="password" id="password" name="password" style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;">
+                <label for="password" style="display: block; margin-bottom: 0.5rem;">Kodeord:</label>
+                <input type="password" id="password" name="password" style="padding: 0.5rem;">
                 
-                <input type="submit" value="Login" style="background-color: #007BFF; color: white; padding: 0.75rem; border: none; cursor: pointer;">
+                <input type="submit" value="Log ind" style="background-color: #007BFF; color: white; padding: 0.75rem; border: none; cursor: pointer;">
+                <input type="button" value="Glemt kodeord" onclick="forgotPassword()" style="background-color: #6c757d; color: white; padding: 0.75rem; border: none; cursor: pointer;">
+                <input type="button" value="Opret bruger" onclick="createUser()" style="background-color: #28a745; color: white; padding: 0.75rem; border: none; cursor: pointer;">
             </form>
         </div>
     </main>
@@ -51,6 +44,14 @@
                 return false;
             }
             return true;
+        }
+
+        function forgotPassword() {
+            alert("Funktion for at nulstille kodeord er endnu ikke implementeret.");
+        }
+
+        function createUser() {
+            alert("Funktion for at oprette ny bruger er endnu ikke implementeret.");
         }
     </script>
 </body>
