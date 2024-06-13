@@ -3,10 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside - Ginhjemmeside</title>
+    <title>Produkt - Ginhjemmeside</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        header img {
+            vertical-align: middle;
+        }
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            padding: 2rem;
+            flex: 1;
+        }
+        .left-column {
+            flex: 1;
+            margin-right: 2rem;
+            text-align: center;
+        }
+        .left-column img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+        .suggested-products {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 1rem;
+        }
+        .suggested-products div {
+            text-align: center;
+        }
+        .suggested-products img {
+            width: 100px;
+            height: 100px;
+        }
+        .right-column {
+            flex: 2;
+        }
+        .right-column h1 {
+            color: #007BFF;
+        }
+        .right-column button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+        .right-column button:hover {
+            background-color: #0056b3;
+        }
+        .right-column p {
+            margin-top: 1rem;
+        }
+    </style>
 </head>
 <body>
-    <header style="background-color: #333; color: white; padding: 1rem; text-align: center;">
+    <header>
         <img src="https://st3.depositphotos.com/5934840/32908/v/1600/depositphotos_329083356-stock-illustration-wine-bottle-icon-flat-design.jpg" alt="Logo" width="70px" height="70px">
         <nav>
             <ul style="list-style-type: none; padding: 0;">
@@ -18,58 +98,30 @@
             </ul>
         </nav>
     </header>
-    <main style="padding: 2rem;">
-        <section style="border: 1px solid black; padding: 2rem; margin-bottom: 1rem; text-align: center;">
-            <h2 style="color: #007BFF;">Nyeste Produkter</h2>
-            <div style="display: flex; justify-content: space-around;">
-                <div style="text-align: center;">
-                    <img src="https://www.poetzsch-padborg.dk/837-large_default/Bombay-Sapphire-London-Dry-Gin-1-l.jpg" alt="Produkt 1" style="width: 200px; height: 200px;">
-                    <p>London Dry Gin</p>
+    <main>
+        <div class="left-column">
+            <img src="https://www.poetzsch-padborg.dk/837-large_default/Bombay-Sapphire-London-Dry-Gin-1-l.jpg" alt="Produktbillede">
+            <div class="suggested-products">
+                <div>
+                    <img src="https://www.raschvin.com/wp-content/uploads/2022/12/beefeater-pink-strawberry-gin-bottle.jpg" alt="Forslået Produkt 1">
+                    <p>Forslået Produkt 1</p>
                 </div>
-                <div style="text-align: center;">
-                    <img src="https://www.raschvin.com/wp-content/uploads/2022/12/beefeater-pink-strawberry-gin-bottle.jpg" alt="Produkt 2" style="width: 200px; height: 200px;">
-                    <p>Beefeater<br>- Pink Strawberry</p>
+                <div>
+                    <img src="https://www.nemlig.com/scommerce/images/beefeater-gin-40.jpg?i=S2jT83IF/5023833&w=623&h=623&mode=pad" alt="Forslået Produkt 2">
+                    <p>Forslået Produkt 2</p>
                 </div>
-                <div style="text-align: center;">
-                    <img src="https://www.nemlig.com/scommerce/images/beefeater-gin-40.jpg?i=S2jT83IF/5023833&w=623&h=623&mode=pad" alt="Produkt 3" style="width: 200px; height: 200px;">
-                    <p>Beefeater</p>
-                </div>
-            </div>
-        </section>
-        <section style="border: 1px solid black; padding: 2rem; margin-bottom: 1rem; text-align: center;">
-            <h2 style="color: #007BFF;">Bestseller</h2>
-            <div style="display: flex; justify-content: space-around;">
-                <div style="text-align: center;">
-                    <img src="https://vinhuset.dk/cdn/shop/products/ukiyo-blossom-gin-01.png?v=1703166839" alt="Produkt 4" style="width: 200px; height: 200px;">
-                    <p>Ukiyo<br>- Blossom Gin</p>
-                </div>
-                <div style="text-align: center;">
-                    <img src="https://delikatessehuset.dk/cdn/shop/products/mintis-originale_695x695.jpg?v=1642679245" alt="Produkt 5" style="width: 200px; height: 200px;">
-                    <p>Mintis Gin<br>- Original</p>
-                </div>
-                <div style="text-align: center;">
-                    <img src="https://mrgin.dk/cdn/shop/products/thorn-gin-70-cl.jpg?height=720&v=1644923017" alt="Produkt 6" style="width: 200px; height: 200px;">
-                    <p>Thorn Gin</p>
+                <div>
+                    <img src="https://vinhuset.dk/cdn/shop/products/ukiyo-blossom-gin-01.png?v=1703166839" alt="Forslået Produkt 3">
+                    <p>Forslået Produkt 3</p>
                 </div>
             </div>
-        </section>
-        <section style="display: flex; justify-content: space-around;">
-            <div style="border: 1px solid black; padding: 2rem; width: 30%; text-align: center;">
-                <img src="https://www.spiritium.dk/cdn/shop/articles/RickeysGarden_blog_1200x.jpg?v=1586784056" alt="Blog Indlæg 1" style="width: 100%;">
-                <h3 style="color: #0056b3;">Seneste Gin-Cocktails</h3>
-                <p>Oplev de nyeste og mest spændende gin-cocktail opskrifter, der vil imponere dine gæster og løfte din gin-oplevelse til nye højder. Fra klassikere med et twist til helt nye kreationer, er der noget for enhver smag. Lær hvordan du kan blande disse cocktails derhjemme og blive din egen bartender.</p>
-            </div>
-            <div style="border: 1px solid black; padding: 2rem; width: 30%; text-align: center;">
-                <img src="https://ginobserver.com/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-06-15.24.11-A-festive-and-elegant-Christmas-cocktail-setting.-The-centerpiece-is-the-Classic-Christmas-Gin-Fizz_-a-crystal-clear-highball-glass-filled-with-a-spar.png" alt="Blog Indlæg 2" style="width: 100%;">
-                <h3 style="color: #0056b3;">Den ultimative gin-cocktail til juleaften</h3>
-                <p>Find ud af, hvordan du kan tilføje lidt ekstra festlig stemning til din juleaften med denne ultimative gin-cocktail.</p>
-            </div>
-            <div style="border: 1px solid black; padding: 2rem; width: 30%; text-align: center;">
-                <img src="https://scontent-cph2-1.xx.fbcdn.net/v/t39.30808-6/392825022_122124938336214355_4990085306607463623_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=YLdAh_J30toQ7kNvgG5g-xm&_nc_ht=scontent-cph2-1.xx&oh=00_AYCBD0hxBveiCmfoMKuG-AEWDx8c-laalIJ6VRHIm_04tw&oe=667078C0" alt="Blog Indlæg 3" style="width: 100%;">
-                <h3 style="color: #0056b3;">Ny Gin-festival i byen</h3>
-                <p>Gin-elskere, glæd jer! Der kommer en ny gin-festival til København, og det bliver en fest uden lige. Uanset om du er en erfaren gin-entusiast eller nybegynder, vil der være masser af spændende smagsprøver, workshops og mulighed for at møde andre gin-elskere.</p>
-            </div>
-        </section>
+        </div>
+        <div class="right-column">
+            <h1>Produkt Titel</h1>
+            <p>Dette er en detaljeret beskrivelse af produktet. Her kan du skrive om produktets egenskaber, historie, og hvorfor det er specielt. Det kan være, hvordan det er fremstillet, hvilke botanicals der er brugt, og hvordan det bedst kan nydes.</p>
+            <button>Læg i kurv</button>
+            <p>Vores leveringstid er normalt 2-3 hverdage. Bestil inden kl. 14 for afsendelse samme dag. Vi tilbyder gratis fragt på ordrer over 500 kr. Hvis du har spørgsmål, er du velkommen til at kontakte vores kundeservice.</p>
+        </div>
     </main>
 </body>
 </html>
