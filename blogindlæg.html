@@ -18,9 +18,17 @@
             color: white;
             padding: 1rem;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         header img {
-            vertical-align: middle;
+            width: 70px;
+            height: 70px;
+            margin-bottom: 1rem;
+        }
+        header nav {
+            margin-top: 1rem;
         }
         header nav ul {
             list-style-type: none;
@@ -37,8 +45,8 @@
         }
         main {
             display: flex;
-            padding: 2rem;
             flex: 1;
+            padding: 2rem;
         }
         .left-column, .right-column {
             flex: 1;
@@ -80,36 +88,41 @@
 </head>
 <body>
     <header>
-        <img src="https://st3.depositphotos.com/5934840/32908/v/1600/depositphotos_329083356-stock-illustration-wine-bottle-icon-flat-design.jpg" alt="Logo" width="70px" height="70px">
+        <img src="https://st3.depositphotos.com/5934840/32908/v/1600/depositphotos_329083356-stock-illustration-wine-bottle-icon-flat-design.jpg" alt="Logo">
         <nav>
-            <ul style="list-style-type: none; padding: 0;">
-                <li style="display: inline; margin-right: 1rem;"><a href="index.html" style="color: white; text-decoration: none;">Forside</a></li>
-                <li style="display: inline; margin-right: 1rem;"><a href="om_os.html" style="color: white; text-decoration: none;">Om os</a></li>
-                <li style="display: inline; margin-right: 1rem;"><a href="kontakt.html" style="color: white; text-decoration: none;">Kontakt</a></li>
+            <ul>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="om_os.html">Om os</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="produkt_kategori.html">Produkt Kategori Menu</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="left-column">
-            <img src="https://via.placeholder.com/300" alt="Blogindlæg billede">
-            <div class="related-posts">
-                <h2>Læs også</h2>
-                <div class="post">
-                    <h3>Titel på Blogindlæg 1</h3>
-                    <p>Kort beskrivelse af blogindlæg 1.</p>
+        <div style="flex: 1;">
+            <h1 style="color: #007BFF; text-align: center; margin-bottom: 2rem;">Blogindlæg Titel</h1>
+            <div style="display: flex;">
+                <div class="left-column">
+                    <img src="https://via.placeholder.com/300" alt="Blogindlæg billede">
+                    <div class="related-posts">
+                        <h2>Læs også</h2>
+                        <div class="post">
+                            <h3>Titel på Blogindlæg 1</h3>
+                            <p>Kort beskrivelse af blogindlæg 1.</p>
+                        </div>
+                        <div class="post">
+                            <h3>Titel på Blogindlæg 2</h3>
+                            <p>Kort beskrivelse af blogindlæg 2.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="post">
-                    <h3>Titel på Blogindlæg 2</h3>
-                    <p>Kort beskrivelse af blogindlæg 2.</p>
+                <div class="right-column">
+                    <p class="byline">Skrevet af Navn, Dato</p>
+                    <p>Her er blogindlæggets manchet, hvor der kan være en kort introduktion til emnet eller indholdet.</p>
+                    <p>Her følger så blogindlæggets brødtekst. Du kan indsætte så meget tekst, som du ønsker, og formatere det efter behov.</p>
+                    <p>Dette er bare et eksempel på strukturen. Du kan tilføje flere afsnit, billeder, eller ændre stylingen efter dine præferencer.</p>
                 </div>
             </div>
-        </div>
-        <div class="right-column">
-            <h1>Blogindlæg Titel</h1>
-            <p class="byline">Skrevet af Navn, Dato</p>
-            <p>Her er blogindlæggets manchet, hvor der kan være en kort introduktion til emnet eller indholdet.</p>
-            <p>Her følger så blogindlæggets brødtekst. Du kan indsætte så meget tekst, som du ønsker, og formatere det efter behov.</p>
-            <p>Dette er bare et eksempel på strukturen. Du kan tilføje flere afsnit, billeder, eller ændre stylingen efter dine præferencer.</p>
         </div>
     </main>
 </body>
