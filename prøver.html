@@ -18,9 +18,17 @@
             color: white;
             padding: 1rem;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         header img {
-            vertical-align: middle;
+            width: 70px;
+            height: 70px;
+            margin-bottom: 1rem;
+        }
+        header nav {
+            margin-top: 1rem;
         }
         header nav ul {
             list-style-type: none;
@@ -39,6 +47,7 @@
             display: flex;
             flex: 1;
             padding: 2rem;
+            flex-direction: column;
         }
         .left-column, .right-column {
             flex: 1;
@@ -72,46 +81,72 @@
         .right-column .byline {
             font-style: italic;
             color: #666;
+            margin-bottom: 1rem;
         }
         .right-column p {
             margin-top: 1rem;
+            line-height: 1.6;
+        }
+        .content-wrapper {
+            display: flex;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://st3.depositphotos.com/5934840/32908/v/1600/depositphotos_329083356-stock-illustration-wine-bottle-icon-flat-design.jpg" alt="Logo" width="70px" height="70px">
+        <img src="https://st3.depositphotos.com/5934840/32908/v/1600/depositphotos_329083356-stock-illustration-wine-bottle-icon-flat-design.jpg" alt="Logo">
         <nav>
-            <ul style="list-style-type: none; padding: 0;">
-                <li style="display: inline; margin-right: 1rem;"><a href="index.html" style="color: white; text-decoration: none;">Forside</a></li>
-                <li style="display: inline; margin-right: 1rem;"><a href="om_os.html" style="color: white; text-decoration: none;">Om os</a></li>
-                <li style="display: inline; margin-right: 1rem;"><a href="kontakt.html" style="color: white; text-decoration: none;">Kontakt</a></li>
+            <ul>
+                <li><a href="om_os.html">Om os</a></li>
+                <li><a href="login.html">Login</a></li><br>
+                <li><a href="produkt_kategori.html">Produkt Kategori Menu</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div style="flex: 1;">
-            <h1 style="color: #007BFF; text-align: center; margin-bottom: 2rem;">Blogindlæg Titel</h1>
-            <div style="display: flex;">
+        <div>
+            <h1 style="color: #007BFF; text-align: center; margin-bottom: 2rem;">Den ultimative gin-cocktail til juleaften</h1>
+            <div class="content-wrapper">
                 <div class="left-column">
-                    <img src="https://via.placeholder.com/300" alt="Blogindlæg billede">
+                    <img src="https://ginobserver.com/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-06-15.24.11-A-festive-and-elegant-Christmas-cocktail-setting.-The-centerpiece-is-the-Classic-Christmas-Gin-Fizz_-a-crystal-clear-highball-glass-filled-with-a-spar.png" alt="Blog Indlæg 2" style="width: 100%;" alt="Blogindlæg billede">
                     <div class="related-posts">
                         <h2>Læs også</h2>
                         <div class="post">
-                            <h3>Titel på Blogindlæg 1</h3>
-                            <p>Kort beskrivelse af blogindlæg 1.</p>
+                            <h3>Seneste Gin-Cocktails</h3>
+                            <p>Oplev de nyeste og mest spændende gin-cocktail opskrifter, der vil imponere dine gæster og løfte din gin-oplevelse til nye højder.</p>
                         </div>
                         <div class="post">
-                            <h3>Titel på Blogindlæg 2</h3>
-                            <p>Kort beskrivelse af blogindlæg 2.</p>
+                            <h3>Ny Gin-festival i byen</h3>
+                            <p>Gin-elskere, glæd jer! Der kommer en ny gin-festival til København, og det bliver en fest uden lige.</p>
                         </div>
                     </div>
                 </div>
                 <div class="right-column">
-                    <p class="byline">Skrevet af Navn, Dato</p>
-                    <p>Her er blogindlæggets manchet, hvor der kan være en kort introduktion til emnet eller indholdet.</p>
-                    <p>Her følger så blogindlæggets brødtekst. Du kan indsætte så meget tekst, som du ønsker, og formatere det efter behov.</p>
-                    <p>Dette er bare et eksempel på strukturen. Du kan tilføje flere afsnit, billeder, eller ændre stylingen efter dine præferencer.</p>
+                    <p class="byline">Skrevet af Peter Frederiksen, 10-06-2024</p>
+                    <p>Julen er en tid for hygge, samvær og gode smagsoplevelser. Hvad kan være bedre end at imponere dine gæster med en udsøgt gin-cocktail, der fanger essensen af julen? Her er vores bud på den ultimative gin-cocktail til juleaften.</p>
+                    <p>Julen er ikke kun en tid for gaver og festligheder, men også en tid for at forkæle sig selv og sine kære med lækre drinks. En gin-cocktail kan være den perfekte måde at tilføje lidt ekstra magi til juleaften. Vores julegin-cocktail er en harmonisk blanding af friske og krydrede smage, der bringer julens ånd frem i hvert eneste sip.</p>
+                    <h2>Ingredienser</h2>
+                    <p>For at lave denne fantastiske gin-cocktail skal du bruge følgende ingredienser:</p>
+                    <ul>
+                        <li>5 cl premium gin</li>
+                        <li>2 cl friskpresset citronsaft</li>
+                        <li>1 cl tranebærsaft</li>
+                        <li>1 cl rosmarinsirup (kan købes eller laves selv)</li>
+                        <li>1 æggehvide (valgfrit for en cremet konsistens)</li>
+                        <li>Knust is</li>
+                        <li>Friske tranebær og en kvist rosmarin til pynt</li>
+                    </ul>
+                    <h2>Fremgangsmåde</h2>
+                    <p>Forbered glasset: Start med at fylde et cocktailglas med knust is for at køle det ned, mens du laver cocktailen.</p>
+                    <p>Mix ingredienserne: I en shaker kombinerer du gin, citronsaft, tranebærsaft, rosmarinsirup og æggehvide. Æggehviden er valgfri, men den giver en dejlig skummende top til din cocktail.</p>
+                    <p>Shake: Ryst ingredienserne kraftigt i cirka 10-15 sekunder. Hvis du bruger æggehvide, skal du først tørshake (uden is) for at få det godt blandet og derefter tilføje is og shake igen.</p>
+                    <p>Hæld op: Fjern isen fra cocktailglasset og hæld cocktailen op gennem en si for at fjerne eventuelle isstykker eller rosmarinblade.</p>
+                    <p>Pynt: Pynt med friske tranebær og en kvist rosmarin. Dette tilføjer ikke kun en smuk visuel detalje, men også en subtil duft af rosmarin, som forstærker smagsoplevelsen.</p>
+                    <h2>Tips til den perfekte julegin-cocktail</h2>
+                    <p>Premium gin: Brug en gin af høj kvalitet for at sikre, at smagen er så ren og kompleks som muligt.</p>
+                    <p>Friske ingredienser: Friskpresset citronsaft og tranebærsaft gør en stor forskel i smagen.</p>
+                    <p>Rosmarinsirup: Lav din egen rosmarinsirup ved at koge lige dele sukker og vand med et par rosmarinkviste, indtil sukkeret er opløst. Lad det trække, indtil smagen er tilpas kraftig.</p>
+                    <p>Denne julegin-cocktail er ikke kun en fest for smagsløgene, men også en smuk tilføjelse til dit julebord. Server den som en velkomstdrink, eller nyd den sammen med julemåltidet. Glædelig jul og skål!</p>
                 </div>
             </div>
         </div>
